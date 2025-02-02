@@ -1,0 +1,301 @@
+.hero-section{
+      padding:5px;
+      position: relative;
+}
+
+.hero-slider{
+      position: relative;
+      height: 95dvh;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      overflow: hidden;
+}
+.mySwiper{
+     height: inherit;
+}
+.hero-slide-moja{
+      height: inherit;
+      display: flex;
+      align-items: center;
+}
+.hero-slide-moja.one{
+     background: url("../assets/hero3.jpg") no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+.hero-slide-moja.two{
+    background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0, 0.3)) , url("../assets/hero1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-slide-moja.three{
+    background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0, 0.3)) ,url("../assets/hero2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-texts{
+      width: 900px;
+}
+
+.hero-texts h1{
+      font-size: 90px;
+      color: whitesmoke;
+      font-weight: 560;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+}
+
+.hero-texts.active h1{
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      opacity: 1;
+}
+
+.hero-texts a{
+     width: 200px;
+     height: 55px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid white;
+     gap: 5px;
+     border-radius: 6px;
+     -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+     -ms-border-radius: 6px;
+     -o-border-radius: 6px;
+     font-size: 16px;
+     color: white;
+     transition: all 1.5s ease;
+     -webkit-transition: all 1.5s ease;
+     -moz-transition: all 1.5s ease;
+     -ms-transition: all 1.5s ease;
+     -o-transition: all 1.5s ease;
+     transform: translateY(200%);
+     -webkit-transform: translateY(200%);
+     -moz-transform: translateY(200%);
+     -ms-transform: translateY(200%);
+     -o-transform: translateY(200%);
+     opacity: 0;
+}
+.hero-texts.active a{
+     opacity: 1;
+     transform: translate(0);
+     -webkit-transform: translate(0);
+     -moz-transform: translate(0);
+     -ms-transform: translate(0);
+     -o-transform: translate(0);
+}
+
+.hero-texts a:hover{
+      background: var(--main-color);
+}
+
+.hero-texts a span{
+    display: flex;
+    margin-top: 3px;
+}
+
+.hero-navigations{
+      position: absolute;
+      right: 10%;
+      bottom: 17.5%;
+      z-index: 10;
+      display: flex;
+      gap: 30px;
+}
+
+.hero-arrow{
+     width: 70px;
+     height: 70px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     backdrop-filter: blur(3px);
+     border-radius: 6px;
+     -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+     -ms-border-radius: 6px;
+     -o-border-radius: 6px;
+     border: 1px solid rgba(188, 188, 188, 0.304);
+}
+
+.hero-arrow span{
+      font-size: 28px;
+      display: flex;
+      color: whitesmoke;
+}
+
+.about-section{
+      padding: 100px 0;
+}
+
+.about-section-column{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 50px
+}
+
+.about-section-column h3{
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 500;
+}
+.about-section-column h2{
+        font-size: 55px;
+        margin-top: 20px;
+        font-weight: 800;
+}
+
+.about-section-column p{
+       font-size: 20px;
+       line-height: 1.75;
+       color: var(--faded);
+       font-weight: 350;
+       margin-bottom: 10px;
+}
+
+.about-section-column a{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background: var(--main-color);
+        color: white;
+        margin: 20px 0;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        font-size: 16px;
+}
+.about-section-column a span{
+      display: flex;
+      margin-top: 3px;
+}
+.about-section-column a:hover{
+       background: rgba(135, 52, 35, 0.899);
+}
+
+.about-section-wrap{
+      display: grid;
+      grid-template-columns: 1fr 3.5fr;
+      gap: 50px;;
+      margin-top: 50px;
+}
+
+.about-section-wrap p{
+        font-size: 17px;
+        line-height: 1.7;
+        color: var(--faded);
+}
+.about-section-images{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 30px;
+        height: 550px;
+        align-items: center;
+}
+
+.about-section-images img{
+       height: max-content;
+       border-radius: 20px;
+       -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+       -ms-border-radius: 20px;
+       -o-border-radius: 20px;
+}
+
+.about-section-images img:nth-child(1){
+       height: 100%;
+}
+
+.about-section-images img:nth-child(2){
+       height: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1090px){
+     .hero-texts{
+           width: 100%;
+     }
+     .hero-texts h1{
+           font-size: 75px;
+     }
+}
+
+@media(max-width: 768px){
+      .hero-texts h1{
+           font-size: 60px;
+      }
+      .hero-navigations{
+           bottom: 10%;;
+      }
+      .hero-arrow{
+            width: 50px;
+            height: 50px;
+      }
+      .hero-arrow span{
+            font-size: 18px;
+      }
+}
+@media(max-width: 540px){
+      .hero-texts h1{
+            font-size: 50px;
+      }
+}
