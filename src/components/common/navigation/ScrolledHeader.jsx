@@ -32,7 +32,7 @@ const ScrolledHeader = () => {
                                                  <li><NavLink to={"/about-us"}>About Us</NavLink></li>
                                                  <li><NavLink to={"/destinations"}>Destinations</NavLink></li>
                                                  <li><NavLink to={"/itineraries"}>Itineraries</NavLink></li>
-                                                 <li><NavLink to={"/contact"}>Contact Us</NavLink></li>
+                                                 <li><NavLink to={"/contact-us"}>Contact Us</NavLink></li>
                                           </ul>
                                 </nav>
                                  <div className="header-actions">

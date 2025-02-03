@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
 import Destinations from './pages/Destinations';
+import Itinerary from './pages/Itinerary';
+import Contact from './pages/Contact';
 
 function App() {
   const location = useLocation();
@@ -17,6 +19,8 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/about-us' element={<About />} />
                 <Route path='/destinations' element={<Destinations />} />
+                <Route path='/itineraries' element={<Itinerary />} />
+                <Route path='/contact-us' element={<Contact />} />
     </Routes>
   )
 }

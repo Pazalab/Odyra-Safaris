@@ -1,0 +1,26 @@
+.itinerary-hero{
+       padding: 110px 0;
+}
+
+.itinerary-hero h1{
+      font-size: 66px;
+      text-align: center;;
+}
+
+.itinerary-hero p.intro{
+      width: 700px;
+      text-align: center;
+      line-height: 1.7;
+      color: var(--faded);
+      margin: 20px auto;
+      font-size: 18px;
+}
+
+@media(max-width: 768px){
+    .itinerary-hero p.intro{
+            width: 90%;
+    }
+    .itinerary-hero h1{
+          font-size: 45px;
+    }
+}

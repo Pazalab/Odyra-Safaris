@@ -1,0 +1,123 @@
+.contact-body{
+      padding: 100px 0;
+}
+.contact-body-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+}
+
+.contact-body-texts h1{
+     font-size: 75px;
+     width: 90%;
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+
+.contact-body-texts p{
+     font-size: 18px;
+     margin-bottom: 10px;
+     line-height: 1.6;
+     color: var(--faded);
+}
+.contact-body-texts .details-texts{
+        margin-top: 30px;
+        display: block;
+}
+.contact-box{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-box span{
+     width: 60px;
+     height: 60px;
+     background: rgba(205, 229, 191, 0.342);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 7px;
+     -webkit-border-radius: 7px;
+     -moz-border-radius: 7px;
+     -ms-border-radius: 7px;
+     -o-border-radius: 7px;
+}
+
+.contact-form{
+      padding: 70px 50px;
+      background: rgba(255, 245, 243, 0.6);
+      border-radius: 17px;
+      -webkit-border-radius: 17px;
+      -moz-border-radius: 17px;
+      -ms-border-radius: 17px;
+      -o-border-radius: 17px;
+}
+
+.form-row{
+     margin-bottom: 20px;
+}
+.form-control{
+     width: 100%;
+     height: 55px;
+     padding-left: 10px;
+     border: 1px solid rgba(220, 220, 220, 0.4);
+     background: rgba(255, 255, 255, 0.532);
+     border-radius: 7px;
+     -webkit-border-radius: 7px;
+     -moz-border-radius: 7px;
+     -ms-border-radius: 7px;
+     -o-border-radius: 7px;
+}
+
+.form-row textarea{
+    width: 100%;
+    height: 155px;
+    padding: 10px;
+    border: 1px solid rgba(220, 220, 220, 0.4);
+    background: rgba(255, 255, 255, 0.532);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.form-btn button{
+      width: 180px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      border: none;
+      background: var(--main-color);
+      color: white;
+      cursor: pointer;
+}
+
+@media(max-width: 1090px){
+     .contact-body-content{
+           grid-template-columns: 1fr;
+     }
+}
+
+@media(max-width: 768px){
+       .contact-body-texts h1{
+             font-size: 60px;
+       }
+}
+
+@media(max-width: 540px){
+    .contact-body-texts h1{
+            font-size: 45px;
+    }
+    .contact-body-texts p{
+            font-size: 17px;
+    }
+}
