@@ -62,7 +62,7 @@ const Sidebar = () => {
                                         <li><NavLink to={"/"}>Home</NavLink></li>
                                         <li><NavLink to={"/about-us"}>About Us</NavLink></li>
                                         <li><NavLink to={"/destinations"}>Destinations</NavLink></li>
-                                        <li><NavLink to={"/services"}>Services</NavLink></li>
+                                        <li><NavLink to={"/itineraries"}>Itineraries</NavLink></li>
                                         <li><NavLink to={"/contact"}>Contact Us</NavLink></li>
                                  </ul>
                            </div>

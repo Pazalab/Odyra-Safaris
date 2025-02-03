@@ -1,0 +1,119 @@
+.destination-hero{
+      padding: 110px 0;
+}
+
+.destination-hero-content{
+       display: grid;
+       grid-template-columns: 1.25fr 1fr;
+       gap: 50px;
+       align-items: center;
+}
+.destination-hero-texts h1{
+       font-size: 60px;
+       margin-bottom: 20px;
+}
+
+.destination-hero-texts p{
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--faded);
+}
+
+.destination-hero-image{
+       height: 520px;
+       overflow: hidden;
+       border-radius: 20px;
+       -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+       -ms-border-radius: 20px;
+       -o-border-radius: 20px;
+}
+
+.destination-body{
+       padding-bottom: 100px;
+}
+
+.destination-body h2{
+    text-align: center;
+    font-size: 60px;
+    border-bottom: 1px solid rgba(224, 211, 199, 0.4);
+    padding-bottom: 10px;
+}
+
+.destinations-row{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+}
+
+.destination-moja img{
+      height: 350px;
+      border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
+}
+
+.destination-texts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+}
+.destination-texts h3{
+      font-size: 24px;
+      font-weight: 500;
+}
+.destination-texts a{
+     font-size: 15px;
+     display: flex;
+     gap: 5px;
+     align-items: center;
+     color: var(--faded);
+     transition: all 0.7s ease;
+     -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -ms-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+}
+
+.destination-texts a span{
+    display: flex;
+    margin-top: 2px;;
+}
+
+.destination-texts a:hover{
+      gap: 8px;
+      color: var(--main-color);
+      font-weight: 500;
+}
+
+@media(max-width: 1090px){
+    .destination-hero-content{
+        grid-template-columns: 1fr;
+        gap: 30px
+ }
+ .destinations-row{
+        grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media(max-width: 768px){
+       .destination-hero-texts h1,
+       .destination-body h2{
+            font-size: 45px;
+       }
+       .destination-hero-texts p{
+             font-size: 18px;
+       }
+
+       .destination-hero-image{
+             height: 400px;
+       }
+       .destinations-row{
+            grid-template-columns: 1fr;
+       }
+}

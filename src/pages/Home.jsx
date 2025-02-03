@@ -1,4 +1,5 @@
 import CallToAction from "../components/common/CallToAction"
+import Footer from "../components/common/Footer"
 import Navbar from "../components/common/navigation/Navbar"
 import AboutSection from "../components/home/AboutSection"
 import DestinationSection from "../components/home/DestinationSection"
@@ -19,6 +20,7 @@ const Home = () => {
              <ProcessSection />
              <TestimonialsSection />
              <CallToAction />
+             <Footer />
        </>
   )
 }

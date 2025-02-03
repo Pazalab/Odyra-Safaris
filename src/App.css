@@ -378,14 +378,86 @@ header.onScroll.active{
       display: flex;
 }
 
+footer{
+      background: rgba(255, 245, 243, 0.6);
+}
 
+.footer-content{
+       padding: 100px 0;
+       display: flex;
+       gap: 100px;
+       justify-content: space-between;
+}
+.footer-logo{
+        width: 130px;
+}
 
+.footer-logo img{
+      object-fit: contain;
+}
+.footer-row{
+      width: 90%;
+}
 
+.footer-column{
+      margin-bottom: 20px;
+}
+.footer-column.split{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+}
 
+.footer-column h3{
+       font-size: 15px;
+       font-weight: 500;
+       text-transform: uppercase;
+       margin-bottom: 10px;
+       border-bottom: 1px solid rgba(231, 224, 219, 0.512);
+       padding-bottom: 5px;
+}
 
+.footer-column ul{
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      line-height: 50px;
+      flex-wrap: wrap;
+}
 
+.footer-column ul li a{
+      color: var(--faded);
+      font-size: 16px;
+      transition: all 0.8s ease;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+}
+.footer-column ul li a:hover{
+      color: var(--main-color);
+}
+.footer-column p{
+       color: var(--faded);
+       display: flex;
+       align-items: center;
+       gap: 5px;
+       font-size: 17px;
+       margin-bottom: 20px;
+}
+.footer-column p span{
+      display: flex;
+}
 
-
+.copyright{
+      border-top: 1px solid rgba(231, 224, 219, 0.512);
+      padding: 30px 0;
+      text-align: center;
+}
+.copyright p{
+      font-size: 14px;
+      color: gray;
+}
 
 @media(max-width: 1290px){
        .inner-row{
@@ -403,6 +475,10 @@ header.onScroll.active{
       .header-content nav{
              display: none;
       }
+      .footer-content{
+             flex-direction: column;
+             gap: 20px;
+      }
 }
 
 @media(max-width: 768px){
@@ -414,5 +490,11 @@ header.onScroll.active{
       }
       .sidebar-content{
               width: 100%;
+      }
+      .footer-column.split{
+             grid-template-columns: 1fr;
+      }
+      .footer-logo{
+             margin: auto;
       }
 }
