@@ -12,7 +12,7 @@ const CallToAction = () => {
 
                                                 <p>We’re always here for you! Our travel experts are available 24/7 to assist you with planning your perfect safari. Feel free to reach out—we’d love to help!</p>
 
-                                                <Link to={"/"}>Let&apos;s Connect <span><HiArrowLongRight /></span></Link>
+                                                <Link to={"/contact-us"}>Let&apos;s Connect <span><HiArrowLongRight /></span></Link>
                                      </div>
                          </div>
              </div>

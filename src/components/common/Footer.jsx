@@ -19,9 +19,9 @@ const Footer = () => {
                                                            <h3>Company</h3>
                                                            <ul>
                                                                     <li><Link to={"/"}>Home</Link></li>
-                                                                    <li><Link to={"/"}>About Us</Link></li>
-                                                                    <li><Link to={"/"}>Destinations</Link></li>
-                                                                    <li><Link to={"/"}>Itineraries</Link></li>
+                                                                    <li><Link to={"/about-us"}>About Us</Link></li>
+                                                                    <li><Link to={"/destinations"}>Destinations</Link></li>
+                                                                    <li><Link to={"/itineraries"}>Itineraries</Link></li>
                                                            </ul>
                                               </div>
                                               <div className="footer-column split">
@@ -30,7 +30,18 @@ const Footer = () => {
 
                                                                       <p><IoMdCall /> +61 4311 06503</p>                                                   
                                                                       <p><span><BsEnvelopeAt /></span>info@odyrasafaris.com.au</p>
-                                                                       <p><span><PiMapPinLine /></span>25 Carbine Loop, Banksia Grove WA</p>
+                                                                      
+                                                                      <h4>Office</h4>
+                                                                      <div className="office-grid">
+                                                                                  <div className="office-grid-column">
+                                                                                            <h5>Australia</h5>
+                                                                                            <p><span><PiMapPinLine /></span>Winton Rd, Joondalup WA 6027</p>
+                                                                                  </div>
+                                                                                  <div className="office-grid-column">
+                                                                                             <h5>Kenya</h5>
+                                                                                              <p><span><PiMapPinLine /></span>Yaya Center, Kilimani - Nairobi</p>
+                                                                                  </div>
+                                                                      </div>
                                                            </div>
 
                                                            <div className="social-links">

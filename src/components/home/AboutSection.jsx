@@ -15,7 +15,7 @@ const AboutSection = () => {
                                              </div>
                                              <div className="inner-section">
                                                       <p>We craft unforgettable journeys that immerse you in the heart of Africa, where the wild meets the extraordinary. From thrilling wildlife encounters that get your pulse racing to awe-inspiring landscapes that take your breath away, every experience is designed to leave you with memories that last a lifetime. Whether you&apos;re capturing the perfect sunset or witnessing the majesty of Africa&apos;s creatures in their natural habitat, every moment is made to amaze.</p>
-                                                      <Link to={""}>Read More <span><HiArrowLongRight /></span></Link>
+                                                      <Link to={"/about-us"}>Read More <span><HiArrowLongRight /></span></Link>
                                              </div>
                                   </div>
                                   <div className="about-section-wrap">

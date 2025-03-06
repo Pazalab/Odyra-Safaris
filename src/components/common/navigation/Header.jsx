@@ -4,13 +4,13 @@ import { LuCalendarCheck2 } from "react-icons/lu";
 import { IoMdCall } from "react-icons/io";
 import logo from "../../../assets/logo.png"
 import { CgMenuRight } from "react-icons/cg";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { sidebarContext } from "./navcontext";
 
 const Header = () => {
     // eslint-disable-next-line no-unused-vars
     const [sidebarStatus, setSidebarStatus ] = useContext(sidebarContext);
-
+    const [ dropdown, setDropdown ] = useState(false)
   return (
     <header>
                 <Topbar />
@@ -23,7 +23,16 @@ const Header = () => {
                                              <ul>
                                                     <li><NavLink to={"/"}>Home</NavLink></li>
                                                     <li><NavLink to={"/about-us"}>About Us</NavLink></li>
-                                                    <li><NavLink to={"/destinations"}>Destinations</NavLink></li>
+                                                    <li onMouseOver={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}><NavLink to={"/destinations"}>Destinations</NavLink>
+                                                               <div className={ dropdown ? "dropdown active" : "dropdown"}>
+                                                                        <ul>
+                                                                                  <li><NavLink to={'/destination/kenya'}>Kenya</NavLink></li>
+                                                                                  <li><NavLink to={'/destination/uganda'}>Uganda</NavLink></li>
+                                                                                  <li><NavLink to={'/destination/tanzania'}>Tanzania</NavLink></li>
+                                                                                  <li><NavLink to={'/destination/rwanda'}>Rwanda</NavLink></li>
+                                                                        </ul>
+                                                               </div>
+                                                    </li>
                                                     <li><NavLink to={"/itineraries"}>Itineraries</NavLink></li>
                                                     <li><NavLink to={"/contact-us"}>Contact Us</NavLink></li>
                                              </ul>

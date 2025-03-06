@@ -1,9 +1,10 @@
 import { testimonials } from "../../data/testimonials"
-import partner1 from "../../assets/rise.png"
-import partner2 from "../../assets/sanfrancisco.png"
-import partner3 from "../../assets/snowflake.png"
-import partner4 from "../../assets/springfield.png"
-import partner5 from "../../assets/vancouver.png"
+import partner1 from "../../assets/intercontinental.png"
+import partner2 from "../../assets/kato.png"
+import partner3 from "../../assets/sopa.png"
+import partner4 from "../../assets/sarova.jpg"
+import partner5 from "../../assets/cato.jpg"
+import partner6 from "../../assets/atas.jpg"
 
 const TestimonialsSection = () => {
   return (
@@ -16,7 +17,7 @@ const TestimonialsSection = () => {
                                         <div className="testimonials-row">
                                                      { testimonials.map(item => 
                                                                <div className="testimonial-moja" key={item.id}>
-                                                                            <img src={item.image} alt="" />
+                                                                            {/* <img src={item.image} alt="" /> */}
 
                                                                             <p>&quot; {item.saying} &quot;</p>
                                                                             <h4>{item.name} ~ <span>{item.position}</span></h4>
@@ -36,6 +37,7 @@ const TestimonialsSection = () => {
                                                                    <img src={partner3} alt="" />
                                                                    <img src={partner4} alt="" />
                                                                    <img src={partner5} alt="" />
+                                                                   <img src={partner6} alt="" />
                                                       </div>
                                         </div>
                            </div>

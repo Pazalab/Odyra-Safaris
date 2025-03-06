@@ -660,6 +660,8 @@
 }
 .partners-logos img{
        width: 180px;
+       height: 100px;
+       object-fit: contain;
 }
 
 .call-to-action{

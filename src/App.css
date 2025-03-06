@@ -172,6 +172,7 @@ header.onScroll.active{
 }
 .header-content nav ul li{
      line-height: 90px;
+     position: relative;
 }
 
 .header-content nav ul li a,
@@ -218,6 +219,43 @@ header.onScroll.active{
 .sidebar-nav ul li a:hover::after,
 .sidebar-nav ul li a.active::after{
        width: 100%;
+}
+
+.dropdown{
+      position: absolute;
+      top: 100%;
+      z-index: 99;
+      width: 200px;
+      background: white;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
+      border: 1px solid gainsboro;
+      max-height: 0;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.8s ease;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+}
+.dropdown.active{
+      max-height: 250px;
+      opacity: 1;;
+      pointer-events: all;
+}
+.dropdown ul{
+       flex-direction: column;
+       gap: 0 !important;
+       align-items: flex-start !important;
+}
+.dropdown ul li{
+       line-height: 45px !important;
+       width: 100%;
+       padding: 0 5%;
 }
 
 .header-actions{
@@ -346,18 +384,41 @@ header.onScroll.active{
         margin-top: 20px;
         gap: 20px;
 }
-
+.sidebar-nav ul li{
+       width: 100%;
+}
 .sidebar-nav ul li a{
        padding-bottom: 5px;
+       display: inline-flex;
 }
 
+.sidebar-nav .dropdown{
+      position: relative;
+      width: 100%;
+}
+
+.sidebar-nav .dropdown ul{
+      margin-top: 0;
+}
+.sidebar-nav .dropdown ul li a{
+      padding-bottom: 0;
+}
+.sidebar-nav .special{
+       display: inline-flex;
+       align-items: center;
+       gap: 5px;
+}
+.sidebar-nav .special span{
+      display: flex;
+      margin-top: 3px;
+}
 .extra-details{
        margin-top: 20px;
        padding-top: 10px;
        border-top: 1px solid rgba(227, 221, 218, 0.597);
        display: grid;
        grid-template-columns: 1fr 1fr;
-       gap: 20px;
+       column-gap: 20px;
 }
 
 .extra-details h4{
@@ -376,6 +437,12 @@ header.onScroll.active{
 }
 .extra-details p span{
       display: flex;
+}
+.extra-column h5{
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 5px;
 }
 
 footer{
@@ -416,7 +483,13 @@ footer{
        border-bottom: 1px solid rgba(231, 224, 219, 0.512);
        padding-bottom: 5px;
 }
-
+.footer-column h4{
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+}
 .footer-column ul{
       display: flex;
       gap: 30px;
@@ -448,7 +521,22 @@ footer{
 .footer-column p span{
       display: flex;
 }
-
+.office-grid{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 20px;
+}
+.office-grid h5{
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(231, 224, 219, 0.512);
+      padding-bottom: 5px;
+}
+.office-grid-column p{
+      font-size: 15px;
+}
 .copyright{
       border-top: 1px solid rgba(231, 224, 219, 0.512);
       padding: 30px 0;
@@ -496,5 +584,9 @@ footer{
       }
       .footer-logo{
              margin: auto;
+      }
+      .office-grid{
+             gap: 0px;
+             grid-template-columns: 1fr;
       }
 }

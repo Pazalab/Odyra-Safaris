@@ -55,7 +55,7 @@ const HeroSection = () => {
                                                                                                  <div className={ isActive ? "hero-texts active" : "hero-texts"}>
                                                                                                             <h1>{slide.title}</h1>
 
-                                                                                                            <Link to={"/"}>Explore <span><LuMoveRight /></span></Link>
+                                                                                                            <Link to={"/itineraries"}>Explore <span><LuMoveRight /></span></Link>
                                                                                                  </div>
                                                                                         </div>
                                                                             </div>

@@ -20,7 +20,7 @@ const Topbar = () => {
                           <div className="topbar-column">
                                      <div className="column-box">
                                                  <span><PiMapPinLine /></span>
-                                                 <p>25 Carbine Loop, Banksia Grove WA</p>
+                                                 <p>Winton Rd, Joondalup WA 6027</p>
                                      </div>
                                      <span className="line"></span>
                                      <div className="column-box">

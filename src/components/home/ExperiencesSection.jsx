@@ -12,7 +12,7 @@ const ExperiencesSection = () => {
                                             <h2>Epic Safari Experiences</h2>
                                             <div className="experiences-column">
                                                         <p>At Odyra Safaris, it’s not just about where you go—it’s about what you experience along the way. From thrilling game drives and up-close wildlife encounters to cultural immersions and breathtaking landscapes, every moment is designed to leave you in awe.</p>
-                                                        <Link to={"/"}>All Experiences <span><GoArrowUpRight /></span></Link>
+                                                        <Link to={"/itineraries"}>All Experiences <span><GoArrowUpRight /></span></Link>
                                             </div>
                                   </div>
 
