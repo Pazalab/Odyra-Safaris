@@ -15,12 +15,99 @@
       margin: 20px auto;
       font-size: 18px;
 }
+/* Single itinerary page */
+.itinerary-wrapper{
+      padding:40px 0px 80px 0;
+}
+.itinerary-content{
+        width: 1000px;
+        margin: auto;
+}
+.itinerary-content h1{
+       font-size: 50px;
+       width: 90%;
+       text-align: center;
+       margin: 20px auto;
+}
 
+.itinerary-content img{
+      border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
+      max-height: 550px;
+      margin-bottom: 30px;
+}
+
+.itinerary-content p{
+       font-size: 18px;
+       line-height: 1.7;
+       color: var(--faded);
+}
+.itinerary-content p.intro{
+      margin-bottom: 20px;
+}
+
+.journey-box{
+      border-bottom: 1px dashed gainsboro;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+}
+.journey-box h3{
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 10px;
+}
+.journey-box p{
+      font-size: 16px;
+}
+.journey-box:last-child{
+      border-bottom: none;
+}
+ .itinerary-book{
+      display: flex;
+      justify-content: center;
+}
+.itinerary-book a{
+       width: 200px;
+       height: 55px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 5px;
+       background-color: var(--main-color);
+       color: white;
+       border-radius: 6px;
+       -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+       -ms-border-radius: 6px;
+       -o-border-radius: 6px;
+       font-size: 15px;
+}
+.itinerary-book a span{
+      display: flex;
+}
+@media(max-width: 1090px){
+      .itinerary-content{
+             width: 100%;
+      }
+}
 @media(max-width: 768px){
     .itinerary-hero p.intro{
             width: 90%;
     }
-    .itinerary-hero h1{
+    .itinerary-hero h1,
+    .itinerary-content h1{
           font-size: 45px;
     }
+    .journey-box h3{
+          font-size: 22px;
+    }
+}
+
+@media(max-width: 530px){
+      .itinerary-content h1{
+            font-size: 36px;
+      }
 }

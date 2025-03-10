@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 import { HiArrowLongRight } from "react-icons/hi2";
 import { GoArrowUpRight } from "react-icons/go";
 
+
 const DestinationSection = () => {
     const [active, setActive] = useState(3)
   return (
@@ -23,25 +24,25 @@ const DestinationSection = () => {
                                                             <div className="overlay"></div>
                                                             <h3><span></span>Kenya</h3>
 
-                                                            <Link to={"/"}>Explore <span><HiArrowLongRight /></span></Link>
+                                                            <Link to={"/destination/country/kenya"}>Explore <span><HiArrowLongRight /></span></Link>
                                                  </div>
                                                  <div onClick={() => setActive(1)} className={ active === 1 ? "destination-column active" : "destination-column"}>
                                                            <img src={destination2} alt="" />
                                                            <div className="overlay"></div>
                                                            <h3><span></span>Tanzania</h3>
-                                                           <Link to={"/"}>Explore <span><HiArrowLongRight /></span></Link>
+                                                           <Link to={"/destination/country/tanzania"}>Explore <span><HiArrowLongRight /></span></Link>
                                                  </div>
                                                  <div onClick={() => setActive(2)} className={ active === 2 ? "destination-column active" : "destination-column"}>
                                                             <img src={destination3} alt="" />
                                                             <div className="overlay"></div>
                                                             <h3><span></span>Uganda</h3>
-                                                            <Link to={"/"}>Explore <span><HiArrowLongRight /></span></Link>
+                                                            <Link to={"/destination/country/uganda"}>Explore <span><HiArrowLongRight /></span></Link>
                                                  </div>
                                                  <div onClick={() => setActive(3)} className={ active === 3 ? "destination-column active" : "destination-column"}>
                                                             <img src={destination4} alt="" />
                                                             <div className="overlay"></div>
                                                             <h3><span></span>Rwanda</h3>
-                                                            <Link to={"/"}>Explore <span><HiArrowLongRight /></span></Link>
+                                                            <Link to={"/destination/country/rwanda"}>Explore <span><HiArrowLongRight /></span></Link>
                                                  </div>
                                       </div>
 

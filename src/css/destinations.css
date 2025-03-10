@@ -122,8 +122,90 @@
 
 .desti-link-wrap a{
         display: inline-flex;
+        width: 220px;
+        height: 55px;
+        border: 2px solid var(--main-color);
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 14px;
+        color: var(--faded)
+}
+.desti-link-wrap a span{
+       display: flex;
+       margin-top: 3px;
+}
+.desti-link-wrap a:hover{
+       background: var(--main-color);
+       color: white;
 }
 
+/* Single Country Styles */
+.country-wrapper{
+      padding: 60px 0 80px 0;
+      background-color: rgba(255, 251, 250, 0.786);;
+}
+.country-wrapper-content h1{
+      font-size: 60px;;
+}
+.country-wrapper .wrapper-texts{
+      width: 90%;
+}
+.wrapper-texts p{
+       font-size: 20px;
+       line-height: 1.5;
+       color: var(--faded);
+       margin-bottom: 10px;
+}
+
+.country-destination-row{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 50px;
+}
+.destination-achiel{
+      background: white;
+      box-shadow: 0px 0px 5px -2px gainsboro;
+      border-radius: 15px;
+      overflow: hidden;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+}
+.destination-achiel img{
+      height: 500px;;
+}
+.achiel-texts{
+      padding: 30px;
+}
+.achiel-texts h3{
+       font-size: 24px;
+       font-family: var(--regular-font);
+       font-weight: 500;
+       margin-bottom: 10px;
+}
+.achiel-texts ul{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.achiel-texts ul li{
+       color: var(--faded);
+       display: flex;
+       gap: 5px;
+}
+
+.achiel-texts ul li span{
+      display: flex;
+      color: var(--main-color);
+}
 @media(max-width: 1090px){
     .destination-hero-content{
         grid-template-columns: 1fr;
@@ -136,17 +218,20 @@
 
 @media(max-width: 768px){
        .destination-hero-texts h1,
-       .destination-body h2{
+       .destination-body h2,
+       .country-wrapper-content h1{
             font-size: 45px;
        }
        .destination-hero-texts p{
              font-size: 18px;
        }
 
-       .destination-hero-image{
+       .destination-hero-image,
+       .destination-achiel img{
              height: 400px;
        }
-       .destinations-row{
+       .destinations-row,
+       .country-destination-row{
             grid-template-columns: 1fr;
        }
 }

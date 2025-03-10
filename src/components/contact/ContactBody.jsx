@@ -15,20 +15,27 @@ const ContactBody = () => {
                                             <p>Reach out to us by simply leaving a message in the contact form or use the details below to get in touch directly—we’d love to hear from you!</p>
 
                                             <div className="details-texts">
-                                                    <div className="contact-box">
-                                                             <span><IoMdCall /></span>
-                                                                <div className="contact-box-details">
-                                                                           <p>+61 4311 06503</p>
-                                                                           <p>+254 7123 45678</p>
-                                                             </div>
-                                                    </div>
-                                                      <div className="contact-box">
+                                                       <div className="contact-box">
                                                                   <span><BsEnvelopeAt /></span>
-                                                                  <p>info@odyrasafaris.com.au</p>
+                                                                  <div className="contact-box-texts">
+                                                                          <h4>Email</h4>
+                                                                          <p>info@odyrasafaris.com.au</p>
+                                                                  </div>
                                                       </div>
-                                                      <div className="contact-box">
-                                                                <span><PiMapPinLine /></span>
-                                                                <p>25 Carbine Loop, Banksia Grove WA</p>
+                                                      <div className="contact-box-split">
+                                                                 <h4>Address</h4>
+                                                                <div className="contact-box-row">
+                                                                          <div className="contact-box-column">
+                                                                                    <h5>Australia</h5>
+                                                                                     <p><span><IoMdCall /></span>+61 4311 06503</p>
+                                                                                     <p><span><PiMapPinLine /></span>Winton Rd, Joondalup WA 6027</p>
+                                                                          </div>
+                                                                           <div className="contact-box-column">
+                                                                                     <h5>Kenya</h5>
+                                                                                     <p><span><IoMdCall /></span>+254 7926 40999</p>
+                                                                                     <p><span><PiMapPinLine /></span>Yaya Center, Kilimani Nairobi</p>
+                                                                           </div>
+                                                                </div>
                                                       </div>
                                             </div>
                                  </div>

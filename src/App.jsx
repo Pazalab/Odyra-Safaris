@@ -6,6 +6,8 @@ import About from './pages/About';
 import Destinations from './pages/Destinations';
 import Itinerary from './pages/Itinerary';
 import Contact from './pages/Contact';
+import DestinationCountry from './pages/DestinationCountry';
+import SingleItineraryPage from './pages/SingleItineraryPage';
 
 function App() {
   const location = useLocation();
@@ -21,6 +23,8 @@ function App() {
                 <Route path='/destinations' element={<Destinations />} />
                 <Route path='/itineraries' element={<Itinerary />} />
                 <Route path='/contact-us' element={<Contact />} />
+                <Route path="/destination/country/:name" element={<DestinationCountry />} />
+                <Route path='/itinerary/:name' element={<SingleItineraryPage />} />
     </Routes>
   )
 }

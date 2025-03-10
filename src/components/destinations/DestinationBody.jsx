@@ -29,7 +29,7 @@ const DestinationBody = () => {
                                                  )}
                                      </div>
                                      <div className="desti-link-wrap">
-                                                  <Link className="desti-link" to={"/"}>All {active} Destinations <span><HiArrowLongRight /></span></Link>
+                                                  <Link className="desti-link" to={`/destination/country/${active.toLowerCase()}`}>All {active}n Destinations <span><HiArrowLongRight /></span></Link>
                                      </div>
                          </div>
               </div>

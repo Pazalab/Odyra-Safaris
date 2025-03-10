@@ -30,7 +30,12 @@
     align-items: center;
     gap: 10px;
 }
-
+.contact-box h4{
+       font-weight: 500;
+}
+.contact-box p{
+      margin-bottom: 0;
+}
 .contact-box span{
      width: 60px;
      height: 60px;
@@ -101,6 +106,41 @@
       cursor: pointer;
 }
 
+.contact-box-split{
+       margin-top: 20px;
+}
+.contact-box-split h4{
+       font-size: 18px;
+       font-weight: 500;
+       padding-bottom: 5px;
+       border-bottom: 1px solid gainsboro;
+}
+
+.contact-box-row{
+      display: flex;
+      gap: 30px;
+      margin-top: 10px;
+      width: 95%;
+      margin: 10px auto 0px auto;
+}
+
+.contact-box-column h5{
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #111;
+        font-weight: 450;
+        margin-bottom: 5px;
+}
+.contact-box-column p{
+      font-size: 16px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+}
+.contact-box-column p span{
+       color: var(--main-color);
+       display: flex;
+}
 @media(max-width: 1090px){
      .contact-body-content{
            grid-template-columns: 1fr;

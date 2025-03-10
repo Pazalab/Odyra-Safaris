@@ -3,6 +3,7 @@ export const destinations = [
          id: 0,
          country: "Kenya",
          intro: ["Kenya is a land of breathtaking landscapes, diverse wildlife, and rich cultural heritage, making it one of the most sought-after travel destinations in Africa. From the vast savannahs of the Maasai Mara, where the Great Migration unfolds, to the pristine white sands of Diani Beach, Kenya offers an unforgettable mix of adventure, relaxation, and discovery. Whether you're a wildlife enthusiast, an adventure seeker, or simply looking to unwind in nature, Kenya has something for everyone.", "Here are some of the top destinations that showcase the very best of Kenya’s beauty, wildlife, and culture:"],
+         link: "/destination/country/kenya",
          destinations: [
                 {
                      id: 100,
@@ -52,6 +53,7 @@ export const destinations = [
          id: 1,
          country: "Uganda",
          intro: ["Uganda, known as the 'Pearl of Africa' is a land of stunning landscapes, abundant wildlife, and warm hospitality. From misty mountain jungles where gorillas roam to vast savannahs teeming with wildlife, Uganda offers a perfect mix of adventure and natural beauty. Whether you're trekking through lush rainforests, cruising along the Nile, or exploring vibrant cultural sites, Uganda promises unforgettable experiences.", 'Here are some of the top destinations that make Uganda a must-visit:'],
+         link: "/destination/country/uganda",
          destinations: [
              {
                  id: 111,
@@ -95,6 +97,7 @@ export const destinations = [
         id: 2,
         country: "Tanzania",
         intro: ["Tanzania is a land of breathtaking landscapes, world-famous wildlife, and rich cultural heritage. From the vast plains of the Serengeti to the turquoise waters of Zanzibar, this East African gem offers some of the most unforgettable travel experiences. Whether you’re looking for thrilling safaris, mountain adventures, or relaxing beach getaways, Tanzania has it all.", "Here are six of the most popular destinations to explore:"],
+        link: "/destination/country/tanzania",
         destinations: [
             {
                 id: 220,
@@ -137,6 +140,7 @@ export const destinations = [
     {
         id: 3,
         country: "Rwanda",
+        link: "/destination/country/rwanda",
         intro: ["Rwanda, the 'Land of a Thousand Hills' is a breathtakingly beautiful country known for its rolling landscapes, rich wildlife, and warm hospitality. From incredible gorilla trekking experiences to vibrant cultural sites and serene lakes, Rwanda offers a unique blend of adventure and relaxation. ", "Here are some of the most popular destinations to explore:"],
         destinations: [
              {

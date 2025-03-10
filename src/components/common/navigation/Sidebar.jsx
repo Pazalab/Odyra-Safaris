@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import logo from "../../../assets/logo.png"
 import { CgClose } from "react-icons/cg"
 import { useContext, useEffect, useRef, useState } from "react"
@@ -15,6 +15,7 @@ const Sidebar = () => {
   const [ sidebarStatus, setSidebarStatus ] = useContext(sidebarContext);
   const sidebarRef = useRef();
   const [ dropdown, setDropdown ] = useState(false)
+  const { pathname } = useLocation();
 
   useEffect(()=>{
          if(sidebarStatus){
@@ -66,14 +67,14 @@ const Sidebar = () => {
                                         <li onMouseOver={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}><NavLink className="special" to={"/destinations"}>Destinations <span><IoIosArrowDown /></span></NavLink>
                                                                <div className={ dropdown ? "dropdown active" : "dropdown"}>
                                                                         <ul>
-                                                                                  <li><NavLink to={'/destination/kenya'}>Kenya</NavLink></li>
-                                                                                  <li><NavLink to={'/destination/uganda'}>Uganda</NavLink></li>
-                                                                                  <li><NavLink to={'/destination/tanzania'}>Tanzania</NavLink></li>
-                                                                                  <li><NavLink to={'/destination/rwanda'}>Rwanda</NavLink></li>
+                                                                                  <li><NavLink to={'/destination/country/kenya'}>Kenya</NavLink></li>
+                                                                                  <li><NavLink to={'/destination/country/uganda'}>Uganda</NavLink></li>
+                                                                                  <li><NavLink to={'/destination/country/tanzania'}>Tanzania</NavLink></li>
+                                                                                  <li><NavLink to={'/destination/country/rwanda'}>Rwanda</NavLink></li>
                                                                         </ul>
                                                                </div>
                                                     </li>
-                                        <li><NavLink to={"/itineraries"}>Itineraries</NavLink></li>
+                                        <li><NavLink to={"/itineraries"} className={pathname.slice(1,10) == "itinerary" ? "active" : ""}>Itineraries</NavLink></li>
                                         <li><NavLink to={"/contact-us"}>Contact Us</NavLink></li>
                                  </ul>
                            </div>
@@ -81,7 +82,7 @@ const Sidebar = () => {
                            <div className="extra-details">
                                     <div className="extra-column">
                                                <h4>Contact Details</h4>
-                                               <p><span><IoMdCall /></span> +61 4311 06503</p>                   
+                                                            
                                     </div>
                                     <div className="extra-column">
                                              <h4>Let&apos;s Connect</h4>
@@ -96,10 +97,12 @@ const Sidebar = () => {
                                     <div className="extra-column">
                                               <h5>Australia</h5>
                                                <p><span><PiMapPinLine /></span>Winton Rd, Joondalup WA 6027</p>
+                                               <p><span><IoMdCall /></span>+61 4311 06503</p>  
                                     </div>
                                     <div className="extra-column">
                                               <h5>Kenya</h5>
                                               <p><span><PiMapPinLine /></span>Yaya Center, Kilimani Nairobi</p>
+                                              <p><span><IoMdCall /></span>+254 7926 40999</p>      
                                     </div>
                            </div>
                 </div>

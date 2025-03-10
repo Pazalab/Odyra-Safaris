@@ -1,8 +1,10 @@
 //import { Link } from "react-router-dom"
-import { experiences } from "../../data/experiences";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { itineraries } from "../../data/itineraries";
+import { useNavigate } from "react-router-dom";
 
 const ItineraryHero = () => {
+  const navigate = useNavigate();
   return (
     <div className="itinerary-hero">
               <div className="inner-row">
@@ -12,8 +14,8 @@ const ItineraryHero = () => {
 
 
                                     <div className="experiences-row">
-                                            { experiences.map(item => 
-                                                  <div className="experience-moja" key={item.id}>
+                                            { itineraries.map(item => 
+                                                  <div className="experience-moja" key={item.id} onClick={()=> navigate(item.link)}>
                                                               <img src={item.image} alt="" />
                                     
                                                               <div className="experience-text">

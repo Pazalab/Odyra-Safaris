@@ -491,9 +491,15 @@
 }
 
 .experience-moja h4{
-       font-size: 26px;
+       font-size: 28px;
        font-weight: 520;
+       line-height: 1.5;
        margin-bottom: 10px;
+       transition: all 0.8s ease;
+       -webkit-transition: all 0.8s ease;
+       -moz-transition: all 0.8s ease;
+       -ms-transition: all 0.8s ease;
+       -o-transition: all 0.8s ease;
 }
 
 .experience-moja p{
@@ -512,7 +518,10 @@
        align-items: center;
        justify-content: center;
 }
-
+.experience-moja:hover h4{
+       color: var(--main-color);
+       cursor: pointer;
+}
 .process-section{
       padding: 110px 0;
       background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/processBg.jpg") no-repeat;
