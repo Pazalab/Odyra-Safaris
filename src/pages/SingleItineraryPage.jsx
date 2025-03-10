@@ -27,7 +27,7 @@ const SingleItineraryPage = () => {
                                                 )}
 
                                                 <div className="itinerary-book">
-                                                           <Link to={"/"}>Book Now <span><LuCalendarCheck2 /></span></Link>
+                                                           <Link to={"https://wa.me/254792640999"} target="_blank">Book Now <span><LuCalendarCheck2 /></span></Link>
                                                 </div>
                                    </div>
                         </div>

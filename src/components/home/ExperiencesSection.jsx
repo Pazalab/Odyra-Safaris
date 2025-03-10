@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { GoArrowUpRight } from "react-icons/go";
-import { experiences } from "../../data/experiences";
+//import { experiences } from "../../data/experiences";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { itineraries } from "../../data/itineraries";
 
 const ExperiencesSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="experiences-section">
               <div className="inner-row">
@@ -17,8 +19,8 @@ const ExperiencesSection = () => {
                                   </div>
 
                                   <div className="experiences-row">
-                                              { experiences.map(item => 
-                                                       <div className="experience-moja" key={item.id}>
+                                              { itineraries.map(item => 
+                                                       <div className="experience-moja" key={item.id} onClick={() => navigate(item.link)}>
                                                                    <img src={item.image} alt="" />
 
                                                                    <div className="experience-text">

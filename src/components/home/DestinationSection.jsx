@@ -49,7 +49,7 @@ const DestinationSection = () => {
                                       <div className="destination-extra">
                                                  <p>At Odyra Safaris, we know the best spots to make your adventure truly unforgettable! Whether it’s witnessing the Big Five in action, exploring breathtaking landscapes, or immersing yourself in rich local cultures, we take you to the heart of Africa’s most incredible destinations.</p>
 
-                                                 <Link to={"/destinations"}>More Destinations <span><GoArrowUpRight /></span></Link>
+                                                 <Link to={"/destinations"}>Explore Destinations <span><GoArrowUpRight /></span></Link>
                                       </div>
                          </div>
                </div>
